@@ -327,7 +327,6 @@ body {
 .scheduling.show {
     transform: scale(1);
     visibility: visible;
-    
     transition: all 0.2s ease-in-out;
     color: #fff;
 }
@@ -350,12 +349,22 @@ body {
     cursor: pointer;
     color: var(--color-txt); 
  */  
- cursor: pointer;
- flex-flow: row wrap; 
- width: 170%;
- padding-top: 20px;;
+    cursor: pointer;
+    flex-flow: row wrap; 
+    width: 170%;
+/*  padding-top: 20px; */
+    pointer-events:stroke;
+    height: 0%;
+    margin-top: 10px;
 }
-
 .scheduling > div > div:hover {
     background-color: var(--color-hover);
+}
+.bg{
+    background-image: url("imagem/barbearia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
 }

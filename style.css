@@ -2,16 +2,17 @@
     --dark-body: #4d4c5a;
     --dark-main: #141529;
     --dark-second: #f4f4f7;
-    --dark-hover: #323048;
+    /* Quando passa o mouse em cima muda a cor
+    --dark-hover: #323048; */
+    --dark-hover: #9e9a9a;
     --dark-text: #f8fbff;
-
     --light-body: #f3f8fe;
     --light-main: #fdfdfd;
     --light-second: #c3c2c8;
     --light-hover: #edf0f5;
     --light-text: #151426;
 
-    --blue: #0000ff;
+    --blue: #9e9a9a;
     --white: #fff;
 
     --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -21,7 +22,7 @@
 
 .dark {
     --bg-body: var(--dark-body);
-    --bg-main: var(--dark-main);
+    --bg-main: var(--dark-main); 
     --bg-second: var(--dark-second);
     --color-hover: var(--dark-hover);
     --color-txt: var(--dark-text);
@@ -58,6 +59,8 @@ body {
     padding: 20px;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(68.15deg, #2F2325 16.62%,#8E5D52 85.61%);
+
     /* transform: scale(1.25); */
 }
 
@@ -264,7 +267,8 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: var(--bg-main);
+    /* background-color: var(--bg-main); */
+    background: linear-gradient(68.15deg, #2F2325 16.62%,#8E5D52 85.61%);
     padding: 20px;
     grid-template-columns: repeat(3, auto);
     gap: 5px;
@@ -315,7 +319,8 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: var(--bg-main);
+    /* background-color: var(--bg-main); */
+    background: linear-gradient(68.15deg, #2F2325 16.62%,#8E5D52 85.61%);
     padding: 20px;
     grid-template-columns: repeat(3, auto);
     gap: 5px;
@@ -357,6 +362,7 @@ body {
     height: 0%;
     margin-top: 10px;
 }
+
 .scheduling > div > div:hover {
     background-color: var(--color-hover);
 }
